@@ -25,50 +25,55 @@
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
-        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Include Controller" enabled="true">
-          <stringProp name="IncludeController.includepath">C:\Phase2_Eclipse_Workspace\Phase3_JMeter_Scripts\Controllers\Test Fragment.jmx</stringProp>
-          <stringProp name="TestPlan.comments">here you have to include test fragments</stringProp>
-        </IncludeController>
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">www.simplilearn.com</stringProp>
+        </ConfigTestElement>
         <hashTree/>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
-        <hashTree>
-          <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="Accounts" enabled="true">
-            <boolProp name="WAITING">true</boolProp>
-            <boolProp name="SUCCESFULL">true</boolProp>
-            <stringProp name="RESPONSE_CODE">200</stringProp>
-            <stringProp name="RESPONSE_MESSAGE">OK</stringProp>
-            <stringProp name="REQUEST_DATA">{
-&quot;request&quot;:&quot;Accounts&quot;
-}</stringProp>
-            <stringProp name="RESPONSE_DATA">{
-&quot;response data&quot;:&quot;Accounts&quot;
-}</stringProp>
-            <stringProp name="RESPONSE_TIME">${__Random(50,500)}</stringProp>
-            <stringProp name="LATENCY">${__Random(1,50)}</stringProp>
-            <stringProp name="CONNECT">${__Random(1,5)}</stringProp>
-            <stringProp name="URL"></stringProp>
-            <stringProp name="RESULT_CLASS">org.apache.jmeter.samplers.SampleResult</stringProp>
-          </kg.apc.jmeter.samplers.DummySampler>
-          <hashTree/>
-          <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="Orders" enabled="true">
-            <boolProp name="WAITING">true</boolProp>
-            <boolProp name="SUCCESFULL">true</boolProp>
-            <stringProp name="RESPONSE_CODE">200</stringProp>
-            <stringProp name="RESPONSE_MESSAGE">OK</stringProp>
-            <stringProp name="REQUEST_DATA">{
-&quot;request&quot;:&quot;Orders&quot;
-}</stringProp>
-            <stringProp name="RESPONSE_DATA">{
-&quot;response data&quot;:&quot;Orders&quot;
-}</stringProp>
-            <stringProp name="RESPONSE_TIME">${__Random(50,500)}</stringProp>
-            <stringProp name="LATENCY">${__Random(1,50)}</stringProp>
-            <stringProp name="CONNECT">${__Random(1,5)}</stringProp>
-            <stringProp name="URL"></stringProp>
-            <stringProp name="RESULT_CLASS">org.apache.jmeter.samplers.SampleResult</stringProp>
-          </kg.apc.jmeter.samplers.DummySampler>
-          <hashTree/>
-        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Homepage" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.path">/</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+          <boolProp name="HTTPSampler.image_parser">false</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+          <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+          <boolProp name="HTTPSampler.md5">false</boolProp>
+          <intProp name="HTTPSampler.ipSourceType">0</intProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+          <stringProp name="ForeachController.inputVal">var1</stringProp>
+          <stringProp name="ForeachController.returnVal">var1</stringProp>
+          <boolProp name="ForeachController.useSeparator">true</boolProp>
+        </ForeachController>
+        <hashTree/>
+        <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+          <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+          <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
+          <stringProp name="TestPlan.comments">This is a Post Processoron response body to match the required pattern.</stringProp>
+          <stringProp name="Sample.scope">all</stringProp>
+          <stringProp name="RegexExtractor.refname">var1</stringProp>
+          <stringProp name="RegexExtractor.regex">World’s (.+?)Online Bootcamp</stringProp>
+          <stringProp name="RegexExtractor.template">$1$</stringProp>
+        </RegexExtractor>
+        <hashTree/>
+        <DebugPostProcessor guiclass="TestBeanGUI" testclass="DebugPostProcessor" testname="Debug PostProcessor" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySamplerProperties">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugPostProcessor>
+        <hashTree/>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
