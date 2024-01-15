@@ -13,6 +13,9 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "basic"
+				},
 				"method": "GET",
 				"header": [],
 				"body": {
@@ -20,14 +23,11 @@
 					"file": {}
 				},
 				"url": {
-					"raw": "https://reqres.in/api/users?page=1&size=2&sort=acs",
-					"protocol": "https",
+					"raw": "{{HOST_URL}}/users?page=1&size=2&sort=acs",
 					"host": [
-						"reqres",
-						"in"
+						"{{HOST_URL}}"
 					],
 					"path": [
-						"api",
 						"users"
 					],
 					"query": [
@@ -54,14 +54,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://reqres.in/api/users/2",
-					"protocol": "https",
+					"raw": "{{HOST_URL}}/users/2",
 					"host": [
-						"reqres",
-						"in"
+						"{{HOST_URL}}"
 					],
 					"path": [
-						"api",
 						"users",
 						"2"
 					]
@@ -75,14 +72,11 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "https://reqres.in/api/users",
-					"protocol": "https",
+					"raw": "{{HOST_URL}}/users",
 					"host": [
-						"reqres",
-						"in"
+						"{{HOST_URL}}"
 					],
 					"path": [
-						"api",
 						"users"
 					]
 				}
@@ -134,14 +128,11 @@
 					}
 				},
 				"url": {
-					"raw": "https://reqres.in/api/users/3",
-					"protocol": "https",
+					"raw": "{{HOST_URL}}/users/3",
 					"host": [
-						"reqres",
-						"in"
+						"{{HOST_URL}}"
 					],
 					"path": [
-						"api",
 						"users",
 						"3"
 					]
