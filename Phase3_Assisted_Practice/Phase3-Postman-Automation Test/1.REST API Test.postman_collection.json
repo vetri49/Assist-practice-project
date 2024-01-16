@@ -9,6 +9,54 @@
 	"item": [
 		{
 			"name": "GET all users request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successfull Test 200 ok\",function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"    \r",
+							"});\r",
+							"pm.test(\"Set variables with different scopes\",function(){\r",
+							"\r",
+							"    pm.environment.set(\"host_address\",\"https://www.simplilearn.com\");\r",
+							"var  env_host_address=pm.environment.get(\"host_address\");\r",
+							"    console.log(\"env url :=>\",env_host_address);\r",
+							"\r",
+							"   pm.globals.set(\"host_address\",\"https://www.google.com\");\r",
+							"   var global_url=pm.globals.get(\"host_address\");\r",
+							"   console.log(\"global url :=>\",global_url)\r",
+							"\r",
+							"\r",
+							"   pm.variables.set(\"host_address\",\"https://www.facebook.com\");\r",
+							"   var local_url=pm.variables.get(\"host_address\");\r",
+							"   console.log(\"local url :=>\"+local_url);\r",
+							"\r",
+							"  pm.collectionVariables.set(\"host_address\",\"https://www.amazon.in\");\r",
+							"   var collection_var=pm.collectionVariables.get(\"host_address\");\r",
+							"console.log(\"Collection url :=>\"+collection_var);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Get variables with different scopes\",function(){\r",
+							"var host_url=pm.environment.get(\"HOST_URL\");\r",
+							"    console.log(\"env url :=>\",host_url);\r",
+							"\r",
+							"   var global_url=pm.globals.get(\"HOST_URL\");\r",
+							"   console.log(\"global url :=>\",host_url)\r",
+							"\r",
+							"   var local_url=pm.variables.get(\"HOST_URL\");\r",
+							"   console.log(\"local url :=>\"+local_url);\r",
+							"\r",
+							"   var collection_var=pm.collectionVariables.get(\"HOST_URL\");\r",
+							"console.log(\"Collection url :=>\"+collection_var);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -23,7 +71,7 @@
 					"file": {}
 				},
 				"url": {
-					"raw": "{{HOST_URL}}/users?page=1&size=2&sort=acs",
+					"raw": "{{HOST_URL}}/users?page={{PAGE}}&size={{SIZE}}&sort=acs&host_address={{host_address}}",
 					"host": [
 						"{{HOST_URL}}"
 					],
@@ -33,15 +81,19 @@
 					"query": [
 						{
 							"key": "page",
-							"value": "1"
+							"value": "{{PAGE}}"
 						},
 						{
 							"key": "size",
-							"value": "2"
+							"value": "{{SIZE}}"
 						},
 						{
 							"key": "sort",
 							"value": "acs"
+						},
+						{
+							"key": "host_address",
+							"value": "{{host_address}}"
 						}
 					]
 				}
@@ -50,17 +102,51 @@
 		},
 		{
 			"name": "Get one user by userId",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Get userid and not null\",function(){\r",
+							"    var user_Id=pm.collectionVariables.get(\"user_id\");\r",
+							"    var jsonData=pm.response.json();\r",
+							"    pm.expect(user_Id).to.not.null\r",
+							"    pm.expect(user_Id).to.equals(\"4\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "{{HOST_URL}}/users/2",
+					"raw": "{{HOST_URL}}/users/{{user_id}}",
 					"host": [
 						"{{HOST_URL}}"
 					],
 					"path": [
 						"users",
-						"2"
+						"{{user_id}}"
 					]
 				}
 			},
@@ -68,9 +154,51 @@
 		},
 		{
 			"name": "Create user Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"\r",
+							"  \r",
+							"});\r",
+							"\r",
+							"pm.test(\"Get job title\",function(){\r",
+							"    var job_title=pm.variables.get(\"random_job_title\");\r",
+							"    var jsonData=pm.response.json();\r",
+							"    pm.expect(jsonData.job_title).to.not.null;\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.variables.set(\"host_url\",\"www.amazon.in\");\r",
+							"pm.variables.set(\"random_job_title\",\"{{$randomJobTitle}}\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"{{host_url}}\",\r\n    \"job\": \"{{random_job_title}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "{{HOST_URL}}/users",
 					"host": [
@@ -85,6 +213,19 @@
 		},
 		{
 			"name": "Update user by user id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "PUT",
 				"header": [],
@@ -98,14 +239,11 @@
 					}
 				},
 				"url": {
-					"raw": "https://reqres.in/api/users/2",
-					"protocol": "https",
+					"raw": "{{HOST_URL}}/users/2",
 					"host": [
-						"reqres",
-						"in"
+						"{{HOST_URL}}"
 					],
 					"path": [
-						"api",
 						"users",
 						"2"
 					]
@@ -115,6 +253,19 @@
 		},
 		{
 			"name": "Delete user by userId",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 204\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "DELETE",
 				"header": [],
@@ -141,12 +292,89 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Update user job by userId",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"job\": \"software tester\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST_URL}}/users/2",
+					"host": [
+						"{{HOST_URL}}"
+					],
+					"path": [
+						"users",
+						"2"
+					]
+				}
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "HOST_URL",
+			"value": "https://reqres.in/api",
+			"type": "string"
+		},
+		{
+			"key": "PAGE",
+			"value": "1",
+			"type": "string"
+		},
+		{
+			"key": "SIZE",
+			"value": "5",
+			"type": "string"
+		},
+		{
+			"key": "host_address",
+			"value": ""
+		},
+		{
+			"key": "user_id",
+			"value": "4"
 		}
 	]
 }
