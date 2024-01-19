@@ -9,6 +9,36 @@
 	"item": [
 		{
 			"name": "Get capital by country code",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							" var xmlresponse=xml2Json(pm.response.text());\r",
+							"\r",
+							" pm.test(\"Response should have a 'soap:Envelope' property\", function () {\r",
+							"  \r",
+							"    pm.expect(xmlresponse).to.have.property('soap:Envelope');\r",
+							"    pm.expect(xmlresponse['soap:Envelope']).to.be.an('object');\r",
+							"});\r",
+							"\r",
+							"\r",
+							" pm.test(\"Response should have a 'soap:Body' property\", function () {\r",
+							"   \r",
+							"    pm.expect(xmlresponse['soap:Envelope']).to.have.property( 'soap:Body');\r",
+							"    pm.expect(xmlresponse['soap:Envelope'][[ 'soap:Body']]).to.be.an('object');\r",
+							"});\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -51,6 +81,19 @@
 		},
 		{
 			"name": "Number to Word Conversion",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -87,6 +130,47 @@
 		},
 		{
 			"name": "List of countries by country code",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							" var xmlresponse=xml2Json(pm.response.text());\r",
+							"\r",
+							" pm.test(\"Response should have a 'soap:Envelope' property\", function () {\r",
+							"  \r",
+							"    pm.expect(xmlresponse).to.have.property('soap:Envelope');\r",
+							"    pm.expect(xmlresponse['soap:Envelope']).to.be.an('object');\r",
+							"});\r",
+							"\r",
+							"\r",
+							" pm.test(\"Response should have a 'soap:Body' property\", function () {\r",
+							"   \r",
+							"    pm.expect(xmlresponse['soap:Envelope']).to.have.property( 'soap:Body');\r",
+							"    pm.expect(xmlresponse['soap:Envelope'][ 'soap:Body']).to.be.an('object');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response should have a 'm:ListOfCountryNamesByNameResponse' property\", function () {\r",
+							"   \r",
+							"    pm.expect(xmlresponse['soap:Envelope']['soap:Body']).to.have.property( 'm:ListOfCountryNamesByNameResponse');\r",
+							"    pm.expect(xmlresponse['soap:Envelope'][ 'soap:Body']['m:ListOfCountryNamesByNameResponse']).to.be.an('object');\r",
+							"});\r",
+							"pm.test(\"Response should have a 'm:ListOfCountryNamesByNameResult' property\", function () {\r",
+							"   \r",
+							"    pm.expect(xmlresponse['soap:Envelope']['soap:Body']['m:ListOfCountryNamesByNameResponse']).to.have.property( 'm:ListOfCountryNamesByNameResult');\r",
+							"   \r",
+							"});\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
