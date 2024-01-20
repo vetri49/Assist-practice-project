@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-20T17:18:58 IST" name="RestAssuredTest" finished-at="2024-01-20T17:19:19 IST" duration-ms="21073">
+    <groups>
+    </groups>
+    <test started-at="2024-01-20T17:18:58 IST" name="REST APIs" finished-at="2024-01-20T17:19:09 IST" duration-ms="11258">
+      <class name="com.simplilearn.resttetsing.DeleteRequestTest">
+        <test-method signature="deleteRequestTest(int)[pri:0, instance:com.simplilearn.resttetsing.DeleteRequestTest@45099dd3]" started-at="2024-01-20T17:19:07 IST" name="deleteRequestTest" description="Test for executing Delete request using rest assured" data-provider="deleteUserRestAssured" finished-at="2024-01-20T17:19:07 IST" duration-ms="701" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteRequestTest -->
+        <test-method signature="deleteRequestTest(int)[pri:0, instance:com.simplilearn.resttetsing.DeleteRequestTest@45099dd3]" started-at="2024-01-20T17:19:07 IST" name="deleteRequestTest" description="Test for executing Delete request using rest assured" data-provider="deleteUserRestAssured" finished-at="2024-01-20T17:19:08 IST" duration-ms="706" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteRequestTest -->
+        <test-method signature="deleteRequestTest(int)[pri:0, instance:com.simplilearn.resttetsing.DeleteRequestTest@45099dd3]" started-at="2024-01-20T17:19:08 IST" name="deleteRequestTest" description="Test for executing Delete request using rest assured" data-provider="deleteUserRestAssured" finished-at="2024-01-20T17:19:09 IST" duration-ms="711" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteRequestTest -->
+      </class> <!-- com.simplilearn.resttetsing.DeleteRequestTest -->
+      <class name="com.simplilearn.resttetsing.PostRequestTest">
+        <test-method signature="postRequestTest()[pri:0, instance:com.simplilearn.resttetsing.PostRequestTest@2794eab6]" started-at="2024-01-20T17:19:03 IST" name="postRequestTest" description="Test for executing Post request using rest assured" finished-at="2024-01-20T17:19:05 IST" duration-ms="1824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postRequestTest -->
+      </class> <!-- com.simplilearn.resttetsing.PostRequestTest -->
+      <class name="com.simplilearn.resttetsing.PutRequestTest">
+        <test-method signature="putRequestTest()[pri:0, instance:com.simplilearn.resttetsing.PutRequestTest@6340e5f0]" started-at="2024-01-20T17:19:05 IST" name="putRequestTest" description="Test for executing Put request using rest assured" finished-at="2024-01-20T17:19:07 IST" duration-ms="1571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putRequestTest -->
+      </class> <!-- com.simplilearn.resttetsing.PutRequestTest -->
+      <class name="com.simplilearn.resttetsing.GetRequestTest">
+        <test-method signature="getRequestTest()[pri:0, instance:com.simplilearn.resttetsing.GetRequestTest@6fdbe764]" started-at="2024-01-20T17:18:58 IST" name="getRequestTest" description="Test for executing GET request using rest assured" finished-at="2024-01-20T17:19:02 IST" duration-ms="4046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRequestTest -->
+        <test-method signature="getRequestWithQueryParmsTest()[pri:0, instance:com.simplilearn.resttetsing.GetRequestTest@6fdbe764]" started-at="2024-01-20T17:19:02 IST" name="getRequestWithQueryParmsTest" description="Test for executing GET request using query parms" finished-at="2024-01-20T17:19:03 IST" duration-ms="905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRequestWithQueryParmsTest -->
+        <test-method signature="getRequestWithUserIdTest()[pri:0, instance:com.simplilearn.resttetsing.GetRequestTest@6fdbe764]" started-at="2024-01-20T17:19:03 IST" name="getRequestWithUserIdTest" description="Test for executing GET /users request with userId" finished-at="2024-01-20T17:19:03 IST" duration-ms="669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRequestWithUserIdTest -->
+      </class> <!-- com.simplilearn.resttetsing.GetRequestTest -->
+    </test> <!-- REST APIs -->
+    <test started-at="2024-01-20T17:19:09 IST" name="SOAP APIs" finished-at="2024-01-20T17:19:17 IST" duration-ms="8223">
+      <class name="com.simplilearn.soaptesting.GetCapitalByCountryCodeTest">
+        <test-method signature="postXMLRequestTest(java.lang.String)[pri:0, instance:com.simplilearn.soaptesting.GetCapitalByCountryCodeTest@15043a2f]" started-at="2024-01-20T17:19:09 IST" name="postXMLRequestTest" description="Test POST Soap request  using XML" data-provider="CountryCodes" finished-at="2024-01-20T17:19:10 IST" duration-ms="1362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postXMLRequestTest -->
+        <test-method signature="postXMLRequestTest(java.lang.String)[pri:0, instance:com.simplilearn.soaptesting.GetCapitalByCountryCodeTest@15043a2f]" started-at="2024-01-20T17:19:10 IST" name="postXMLRequestTest" description="Test POST Soap request  using XML" data-provider="CountryCodes" finished-at="2024-01-20T17:19:11 IST" duration-ms="1234" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[US]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postXMLRequestTest -->
+        <test-method signature="postXMLRequestTest(java.lang.String)[pri:0, instance:com.simplilearn.soaptesting.GetCapitalByCountryCodeTest@15043a2f]" started-at="2024-01-20T17:19:11 IST" name="postXMLRequestTest" description="Test POST Soap request  using XML" data-provider="CountryCodes" finished-at="2024-01-20T17:19:13 IST" duration-ms="1234" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postXMLRequestTest -->
+        <test-method signature="postXMLRequestTest(java.lang.String)[pri:0, instance:com.simplilearn.soaptesting.GetCapitalByCountryCodeTest@15043a2f]" started-at="2024-01-20T17:19:13 IST" name="postXMLRequestTest" description="Test POST Soap request  using XML" data-provider="CountryCodes" finished-at="2024-01-20T17:19:14 IST" duration-ms="1315" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ML]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postXMLRequestTest -->
+      </class> <!-- com.simplilearn.soaptesting.GetCapitalByCountryCodeTest -->
+      <class name="com.simplilearn.soaptesting.NumberToWordConversion">
+        <test-method signature="postXMLRequestTest()[pri:0, instance:com.simplilearn.soaptesting.NumberToWordConversion@4a83a74a]" started-at="2024-01-20T17:19:14 IST" name="postXMLRequestTest" description="Test POST Number Conversion   using XML" finished-at="2024-01-20T17:19:17 IST" duration-ms="3063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postXMLRequestTest -->
+      </class> <!-- com.simplilearn.soaptesting.NumberToWordConversion -->
+    </test> <!-- SOAP APIs -->
+    <test started-at="2024-01-20T17:19:17 IST" name="REST Auth" finished-at="2024-01-20T17:19:19 IST" duration-ms="1502">
+      <class name="com.simplilearn.authtest.AuthenticationTest">
+        <test-method signature="testAuthenticationToken()[pri:0, instance:com.simplilearn.authtest.AuthenticationTest@28261e8e]" started-at="2024-01-20T17:19:17 IST" name="testAuthenticationToken" description="Test Authentication with rest assured" finished-at="2024-01-20T17:19:19 IST" duration-ms="1496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAuthenticationToken -->
+      </class> <!-- com.simplilearn.authtest.AuthenticationTest -->
+    </test> <!-- REST Auth -->
+  </suite> <!-- RestAssuredTest -->
+</testng-results>
