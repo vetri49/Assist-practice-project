@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="RestAssuredTest">
 <Listeners>
-
           <Listener class-name="org.uncommons.reportng.HTMLReporter" />
           <Listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 </Listeners>
@@ -23,6 +22,8 @@
 	<test name="REST Auth">
 		<classes>
 			<class name="com.simplilearn.authtest.AuthenticationTest"></class>
+			<class name="com.simplilearn.authtest.OAuthauthenticationTest"></class>
+			<class name="com.simplilearn.authtest.SSLAuthenticationTest"></class>
 		</classes>
 	</test>
 </suite>

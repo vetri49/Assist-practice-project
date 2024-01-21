@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -14,6 +15,7 @@ import io.restassured.http.ContentType;
 public class DeleteRequestTest {
 	
 	private static final String BASE_URL="https://reqres.in/api";
+	private static final Logger logger = Logger.getLogger(DeleteRequestTest.class);
 	
 	@DataProvider(name="deleteUserRestAssured")
 	public Iterator<Object[]> deleteUserRestAssured(){
@@ -28,10 +30,13 @@ public class DeleteRequestTest {
 	public void deleteRequestTest(final int userId) {
 		
 		
+		logger.info("Start :: Delete user by {userId} test");
+		logger.info("Delete  ::  URL" +BASE_URL+"/users/"+userId);
 		
 		RestAssured.given().baseUri(BASE_URL).when()
 		.contentType(ContentType.JSON)
 		.delete("/users/"+userId).then().assertThat().statusCode(204);
 
+		logger.info("END :: Delete users test");
 }
 }

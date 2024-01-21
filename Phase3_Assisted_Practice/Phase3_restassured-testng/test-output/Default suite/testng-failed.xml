@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.simplilearn.soaptesting.NumberToWordConversion">
+      <class name="com.simplilearn.resttetsing.PatchRequestTest">
         <methods>
-          <include name="postXMLRequestTest"/>
+          <include name="putRequestTest"/>
         </methods>
-      </class> <!-- com.simplilearn.soaptesting.NumberToWordConversion -->
+      </class> <!-- com.simplilearn.resttetsing.PatchRequestTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
