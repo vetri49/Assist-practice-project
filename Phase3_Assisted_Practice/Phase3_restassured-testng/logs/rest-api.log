@@ -1,45 +1,51 @@
-2024-01-21 13:52:17 INFO  GetRequestTest:18 Start :: GET All users test.
-2024-01-21 13:52:17 INFO  GetRequestTest:21 GET : URL https://reqres.in/api/users?page=2
-2024-01-21 13:52:21 INFO  GetRequestTest:36 Reponse :: {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
-2024-01-21 13:52:21 INFO  GetRequestTest:37 End :: GET All users test.
-2024-01-21 13:52:21 INFO  GetRequestTest:42 Start :: GET All users test with query parms.
-2024-01-21 13:52:21 INFO  GetRequestTest:50 GET : URL https://reqres.in/api/users?page=2
-2024-01-21 13:52:21 INFO  GetRequestTest:64 Reponse :: {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
-2024-01-21 13:52:21 INFO  GetRequestTest:65 End :: GET All users test with query parms.
-2024-01-21 13:52:21 INFO  GetRequestTest:70 Start :: GET user by {userId} test.
-2024-01-21 13:52:22 INFO  GetRequestTest:75 GET : URL https://reqres.in/api/users/7
-2024-01-21 13:52:22 INFO  GetRequestTest:85 Reponse :: {"data":{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
-2024-01-21 13:52:22 INFO  GetRequestTest:86 End :: GET user by {userId} test.
-2024-01-21 13:52:22 INFO  PostRequestTest:18 Start :: Test for executing Post request using rest assured
-2024-01-21 13:52:22 INFO  PostRequestTest:23 Request Object :;com.simplilearn.resttetsing.PostData@7d1c164a
-2024-01-21 13:52:24 INFO  PostRequestTest:37 Response Object ::{
+2024-01-22 10:02:51 INFO  GetRequestTest:18 Start :: GET All users test.
+2024-01-22 10:02:51 INFO  GetRequestTest:21 GET : URL https://reqres.in/api/users?page=2
+2024-01-22 10:02:56 INFO  GetRequestTest:36 Reponse :: {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+2024-01-22 10:02:56 INFO  GetRequestTest:37 End :: GET All users test.
+2024-01-22 10:02:56 INFO  GetRequestTest:42 Start :: GET All users test with query parms.
+2024-01-22 10:02:56 INFO  GetRequestTest:50 GET : URL https://reqres.in/api/users?page=2
+2024-01-22 10:02:56 INFO  GetRequestTest:64 Reponse :: {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+2024-01-22 10:02:56 INFO  GetRequestTest:65 End :: GET All users test with query parms.
+2024-01-22 10:02:56 INFO  GetRequestTest:70 Start :: GET user by {userId} test.
+2024-01-22 10:02:56 INFO  GetRequestTest:75 GET : URL https://reqres.in/api/users/7
+2024-01-22 10:02:57 INFO  GetRequestTest:85 Reponse :: {"data":{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+2024-01-22 10:02:57 INFO  GetRequestTest:86 End :: GET user by {userId} test.
+2024-01-22 10:02:57 INFO  PostRequestTest:18 Start :: Test for executing Post request using rest assured
+2024-01-22 10:02:57 INFO  PostRequestTest:23 Request Object :;com.simplilearn.resttetsing.PostData@7d1c164a
+2024-01-22 10:02:59 INFO  PostRequestTest:37 Response Object ::{
     "name": "Mike smith",
     "job": "Dermotologist",
-    "id": "603",
-    "createdAt": "2024-01-21T08:22:24.663Z"
+    "id": "370",
+    "createdAt": "2024-01-22T04:32:58.569Z"
 }
-2024-01-21 13:52:24 INFO  PostRequestTest:38 End :: Test for executing Post request using rest assured
-2024-01-21 13:52:24 INFO  PutRequestTest:19 Start :: Test for executing Put request using rest assured
-2024-01-21 13:52:26 INFO  PutRequestTest:38 Response Object ::{"name":"Mike smith","job":"QA Analyst","id":"750","createdAt":"2024-01-21T08:22:26.699Z"}
-2024-01-21 13:52:26 INFO  PutRequestTest:41 End :: Test for executing Put request using rest assured
-2024-01-21 13:52:26 INFO  DeleteRequestTest:33 Start :: Delete user by {userId} test
-2024-01-21 13:52:26 INFO  DeleteRequestTest:34 Delete  ::  URLhttps://reqres.in/api/users/2
-2024-01-21 13:52:28 INFO  DeleteRequestTest:40 END :: Delete users test
-2024-01-21 13:52:28 INFO  DeleteRequestTest:33 Start :: Delete user by {userId} test
-2024-01-21 13:52:28 INFO  DeleteRequestTest:34 Delete  ::  URLhttps://reqres.in/api/users/4
-2024-01-21 13:52:29 INFO  DeleteRequestTest:40 END :: Delete users test
-2024-01-21 13:52:29 INFO  DeleteRequestTest:33 Start :: Delete user by {userId} test
-2024-01-21 13:52:29 INFO  DeleteRequestTest:34 Delete  ::  URLhttps://reqres.in/api/users/6
-2024-01-21 13:52:31 INFO  DeleteRequestTest:40 END :: Delete users test
-2024-01-21 13:52:31 INFO  PatchRequestTest:20 Start :: Test for executing patch request using rest assured
-2024-01-21 13:52:31 INFO  PatchRequestTest:21 POST :: URL https://reqres.in/api/
-2024-01-21 13:52:34 INFO  PatchRequestTest:40 Response Object ::{"name":"Mike smith","job":"QA Analyst","id":"962","createdAt":"2024-01-21T08:22:34.133Z"}
-2024-01-21 13:52:34 INFO  PatchRequestTest:43 End :: Test for executing patch request using rest assured
-2024-01-21 13:52:34 INFO  GetCapitalByCountryCodeTest:33 start :: Test POST Soap request  using XML
-2024-01-21 13:52:34 INFO  GetCapitalByCountryCodeTest:34 GET :: URLhttp://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso  for  IN
-2024-01-21 13:52:36 INFO  GetCapitalByCountryCodeTest:58 Response Object ::<html lang="en" lang="en">
-  <head>
-    <script type="text/javascript">
+2024-01-22 10:02:59 INFO  PostRequestTest:38 End :: Test for executing Post request using rest assured
+2024-01-22 10:02:59 INFO  PutRequestTest:19 Start :: Test for executing Put request using rest assured
+2024-01-22 10:03:01 INFO  PutRequestTest:38 Response Object ::{"name":"Mike smith","job":"QA Analyst","id":"545","createdAt":"2024-01-22T04:33:00.485Z"}
+2024-01-22 10:03:01 INFO  PutRequestTest:41 End :: Test for executing Put request using rest assured
+2024-01-22 10:03:01 INFO  DeleteRequestTest:33 Start :: Delete user by {userId} test
+2024-01-22 10:03:01 INFO  DeleteRequestTest:34 Delete  ::  URLhttps://reqres.in/api/users/2
+2024-01-22 10:03:02 INFO  DeleteRequestTest:40 END :: Delete users test
+2024-01-22 10:03:02 INFO  DeleteRequestTest:33 Start :: Delete user by {userId} test
+2024-01-22 10:03:02 INFO  DeleteRequestTest:34 Delete  ::  URLhttps://reqres.in/api/users/4
+2024-01-22 10:03:03 INFO  DeleteRequestTest:40 END :: Delete users test
+2024-01-22 10:03:03 INFO  DeleteRequestTest:33 Start :: Delete user by {userId} test
+2024-01-22 10:03:03 INFO  DeleteRequestTest:34 Delete  ::  URLhttps://reqres.in/api/users/6
+2024-01-22 10:03:04 INFO  DeleteRequestTest:40 END :: Delete users test
+2024-01-22 10:03:04 INFO  PatchRequestTest:20 Start :: Test for executing patch request using rest assured
+2024-01-22 10:03:04 INFO  PatchRequestTest:21 POST :: URL https://reqres.in/api/
+2024-01-22 10:03:06 INFO  PatchRequestTest:40 Response Object ::{"name":"Mike smith","job":"QA Analyst","id":"523","createdAt":"2024-01-22T04:33:05.316Z"}
+2024-01-22 10:03:06 INFO  PatchRequestTest:43 End :: Test for executing patch request using rest assured
+2024-01-22 10:03:06 INFO  GetCapitalByCountryCodeTest:34 start :: Test POST Soap request  using XML
+2024-01-22 10:03:06 INFO  GetCapitalByCountryCodeTest:35 GET :: URLhttp://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso  for  IN
+2024-01-22 10:03:07 INFO  GetCapitalByCountryCodeTest:59 Response Object ::
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    
+
+<script type="text/javascript">
     
 
     // Function that should be called to initialize the menu
@@ -48,92 +54,100 @@
         Menu_Open(aOpenIDs);
     }
 </script>
+    
     <title>Oorsprong Family Domain-Home</title>
-    <meta http-equiv="Content-type" content="application/xhtml+xml; charset=iso-8859-1"/>
-    <meta name="description" content=""/>
-    <meta name="abstract" content=""/>
-    <meta name="copyright" content=""/>
-    <meta name="keywords" content=""/>
-    <meta name="author" content="Data Access Europe B.V."/>
-    <meta name="robots" content="all"/>
-    <link rel="StyleSheet" type="text/Css" href="Css/SearchStyles.css"/>
-    <link rel="StyleSheet" type="text/Css" href="Css/ElectosStyles.css"/>
-    <link rel="StyleSheet" type="text/Css" href="Css/WebsiteStyles.css"/>
-    <script type="text/javascript" src="js/preload.js"/>
-    <script type="text/javascript" src="js/menu.js"/>
-    <script type="text/javascript" src="js/function.js"/>
-  </head>
-  <body onresize="doResize();" onload="setTimeout('Menu_Load();', 100);setTimeout('showEmbLabel();', 100);doResize();">
+    
+	<meta http-equiv="Content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+    <meta name="description" content="" />
+    <meta name="abstract" content="" />
+    <meta name="copyright" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Data Access Europe B.V." />
+	<meta name="robots" content="all" />
+
+    <link rel="StyleSheet" type="text/Css" href="Css/SearchStyles.css" />
+    <link rel="StyleSheet" type="text/Css" href="Css/ElectosStyles.css" />
+    <link rel="StyleSheet" type="text/Css" href="Css/WebsiteStyles.css" />
+    
+    <script type="text/javascript" src="js/preload.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+</head>
+
+<body onresize="doResize();" onload="setTimeout('Menu_Load();', 100);setTimeout('showEmbLabel();', 100);doResize();">
     <div id="container">
-      <div id="top">
-        <div id="logo">
-          <div id="company_logo" style="height:70px; width:42px;">
-            <img style="height:70px; width:42px;" src="http://vincent.oorsprong.org/Include/ElectosFileStreaming.asp?FileId=66" alt="Logo"/>
-          </div>
-          <div id="company_name">Oorsprong Family</div>
-          <div id="company_tagline">Family Website</div>
+        <div id="top">
+            <div id="logo"> 				
+								
+                    <div id="company_logo" style="height:70px; width:42px;">
+                        <img style="height:70px; width:42px;" src="http://vincent.oorsprong.org/Include/ElectosFileStreaming.asp?FileId=66" alt="Logo" />								
+                    </div>
+                
+				
+                <div id="company_name">Oorsprong Family</div>
+                <div id="company_tagline">Family Website</div>					
+			</div>
+
+            
         </div>
-      </div>
-      <div id="header">
-        <img id="image" style="height:190px; width:253px;" src="http://vincent.oorsprong.org/Include/ElectosFileStreaming.asp?FileId=68" alt=""/>
-      </div>
-      <div id="menubackground">
-        <div id="mainmenu">
-          <ul>
-            <li class="MenuNode" id="MenuItem4" style="display: none;" ilevel="1" extended="False" parentnodeid="1">
-              <div class="tab2 menuimage" style="padding-top: 9px; float: left; clear: left;">
-                <img class="MenuNodeIMG" id="MenuImage4" src="images/RootCollapsed.gif" extendedimage="images/RootExtended.gif" collapsedimage="images/RootCollapsed.gif" onclick="Menu_Click(4);" style="cursor: pointer" alt=""/>
-              </div>
-              <div style="float: left;">
-                <img src="images/1.gif" alt=""/>
-              </div>
-              <div class="tab2 menutitle" style="float: left; clear right;">
-                <a shape="rect" class="menu" href="http://vincent.oorsprong.org/normal.asp?pageid=4">Home</a>
-              </div>
-            </li>
-            <li class="menusep">
-              <div style="float: left; clear: both;">
-                <img src="images/1.gif" alt=""/>
-              </div>
-            </li>
-          </ul>
+
+        <div id="header">
+            				
+                <img style="height:190px; width:253px;" src="http://vincent.oorsprong.org/Include/ElectosFileStreaming.asp?FileId=68" id="image" alt="" />
+            
         </div>
-      </div>
-      <div id="column1">
-        <div id="content">
-          <div id="menuimage">
-            <h1>Welcome!</h1>
-          </div>
-          <p>Welcome to the Oorsprong Family website. Here you will find topics concerning the Oorsprong Family.</p>
-          <p>Members of the family have their own domains;</p>
-          <ul>
-            <li>
-              <a shape="rect" target="_blank" href="http://vincent.oorsprong.org">Vincent</a>
-            </li>
-            <li>
-              <a shape="rect" target="_blank" href="http://fang.oorsprong.org">Fang</a>
-            </li>
-          </ul>
-          <p>
-A special domain is present for the             <a shape="rect" target="_blank" href="http://films.oorsprong.org">films</a>
- taken by Ferd Oorsprong (1932-2006).          </p>
-        </div>
-        <div class="clear"> </div>
-      </div>
-      <div id="footer-container">
-        <div id="footer-left"/>
-        <div id="footer-gray"/>
-        <div id="footer"/>
-      </div>
-    </div>
-  </body>
+        
+	    <div id="menubackground">	
+			<div id="mainmenu"> 
+		        <ul>
+		            <!-- Print the menu -->
+		            <li style='display: none;' iLevel='1' Extended='False' id='MenuItem4' ParentNodeId='1' class='MenuNode'><div class='tab2 menuimage' style='padding-top: 9px; float: left; clear: left;'><img src='images/RootCollapsed.gif' ExtendedImage='images/RootExtended.gif' CollapsedImage='images/RootCollapsed.gif' class='MenuNodeIMG' id='MenuImage4' onclick='Menu_Click(4);' style='cursor: pointer' alt='' /></div><div style='float: left;'><img src='images/1.gif' alt='' /></div><div style='float: left; clear right;' class='tab2 menutitle'><a href='http://vincent.oorsprong.org/normal.asp?pageid=4' class='menu'>Home</a></div></li><li class='menusep'><div style='float: left; clear: both;'><img src='images/1.gif' alt='' /></div></li>
+		        </ul>
+		        <!-- Print Current shopping cart content -->
+		        
+		    </div>
+		</div>
+		
+		<div id="column1">		
+	        <div id="content">
+	            <!-- Prints a specific item of a page. The name of the item corresponds with the name of the document structure item you wish to print. In this case the item named 'Title'-->
+	            <div id="menuimage"><h1>Welcome!</h1></div>
+	            
+	            <!-- Prints a specific item of a page. The name of the item corresponds with the name of the document structure item you wish to print. In this case the item named 'Text'-->
+	            <p>Welcome to the Oorsprong Family website. Here you will find topics concerning the Oorsprong Family.</p>
+<p>Members of the family have their own domains;</p>
+<ul>
+    <li><a target="_blank" href="http://vincent.oorsprong.org">Vincent</a></li>
+    <li><a target="_blank" href="http://fang.oorsprong.org">Fang</a></li>
+</ul>
+<p>A special domain is present for the <a target="_blank" href="http://films.oorsprong.org">films</a> taken by Ferd Oorsprong (1932-2006).</p>
+	        </div>
+	
+			<div class="clear">&nbsp;</div>
+		</div>			
+
+		<div id="footer-container"> 
+			<div id="footer-left"> </div>
+			<div id="footer-gray"></div>
+			<div id="footer"> </div>
+		</div>
+	</div>
+</body>
 </html>
-2024-01-21 13:52:36 INFO  GetCapitalByCountryCodeTest:59 End :: Test POST Soap request  using XML
-2024-01-21 13:52:36 INFO  GetCapitalByCountryCodeTest:33 start :: Test POST Soap request  using XML
-2024-01-21 13:52:36 INFO  GetCapitalByCountryCodeTest:34 GET :: URLhttp://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso  for  US
-2024-01-21 13:52:38 INFO  GetCapitalByCountryCodeTest:58 Response Object ::<html lang="en" lang="en">
-  <head>
-    <script type="text/javascript">
+<!-- Making sure the file is not empty; this might cause a problem on some servers. Replace this text with your own code for augmentation, but make sure it is never empty -->
+
+2024-01-22 10:03:07 INFO  GetCapitalByCountryCodeTest:60 End :: Test POST Soap request  using XML
+2024-01-22 10:03:07 INFO  GetCapitalByCountryCodeTest:34 start :: Test POST Soap request  using XML
+2024-01-22 10:03:07 INFO  GetCapitalByCountryCodeTest:35 GET :: URLhttp://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso  for  US
+2024-01-22 10:03:08 INFO  GetCapitalByCountryCodeTest:59 Response Object ::
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    
+
+<script type="text/javascript">
     
 
     // Function that should be called to initialize the menu
@@ -142,92 +156,100 @@ A special domain is present for the             <a shape="rect" target="_blank" 
         Menu_Open(aOpenIDs);
     }
 </script>
+    
     <title>Oorsprong Family Domain-Home</title>
-    <meta http-equiv="Content-type" content="application/xhtml+xml; charset=iso-8859-1"/>
-    <meta name="description" content=""/>
-    <meta name="abstract" content=""/>
-    <meta name="copyright" content=""/>
-    <meta name="keywords" content=""/>
-    <meta name="author" content="Data Access Europe B.V."/>
-    <meta name="robots" content="all"/>
-    <link rel="StyleSheet" type="text/Css" href="Css/SearchStyles.css"/>
-    <link rel="StyleSheet" type="text/Css" href="Css/ElectosStyles.css"/>
-    <link rel="StyleSheet" type="text/Css" href="Css/WebsiteStyles.css"/>
-    <script type="text/javascript" src="js/preload.js"/>
-    <script type="text/javascript" src="js/menu.js"/>
-    <script type="text/javascript" src="js/function.js"/>
-  </head>
-  <body onresize="doResize();" onload="setTimeout('Menu_Load();', 100);setTimeout('showEmbLabel();', 100);doResize();">
+    
+	<meta http-equiv="Content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+    <meta name="description" content="" />
+    <meta name="abstract" content="" />
+    <meta name="copyright" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Data Access Europe B.V." />
+	<meta name="robots" content="all" />
+
+    <link rel="StyleSheet" type="text/Css" href="Css/SearchStyles.css" />
+    <link rel="StyleSheet" type="text/Css" href="Css/ElectosStyles.css" />
+    <link rel="StyleSheet" type="text/Css" href="Css/WebsiteStyles.css" />
+    
+    <script type="text/javascript" src="js/preload.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+</head>
+
+<body onresize="doResize();" onload="setTimeout('Menu_Load();', 100);setTimeout('showEmbLabel();', 100);doResize();">
     <div id="container">
-      <div id="top">
-        <div id="logo">
-          <div id="company_logo" style="height:70px; width:42px;">
-            <img style="height:70px; width:42px;" src="http://vincent.oorsprong.org/Include/ElectosFileStreaming.asp?FileId=66" alt="Logo"/>
-          </div>
-          <div id="company_name">Oorsprong Family</div>
-          <div id="company_tagline">Family Website</div>
+        <div id="top">
+            <div id="logo"> 				
+								
+                    <div id="company_logo" style="height:70px; width:42px;">
+                        <img style="height:70px; width:42px;" src="http://vincent.oorsprong.org/Include/ElectosFileStreaming.asp?FileId=66" alt="Logo" />								
+                    </div>
+                
+				
+                <div id="company_name">Oorsprong Family</div>
+                <div id="company_tagline">Family Website</div>					
+			</div>
+
+            
         </div>
-      </div>
-      <div id="header">
-        <img id="image" style="height:190px; width:253px;" src="http://vincent.oorsprong.org/Include/ElectosFileStreaming.asp?FileId=68" alt=""/>
-      </div>
-      <div id="menubackground">
-        <div id="mainmenu">
-          <ul>
-            <li class="MenuNode" id="MenuItem4" style="display: none;" ilevel="1" extended="False" parentnodeid="1">
-              <div class="tab2 menuimage" style="padding-top: 9px; float: left; clear: left;">
-                <img class="MenuNodeIMG" id="MenuImage4" src="images/RootCollapsed.gif" extendedimage="images/RootExtended.gif" collapsedimage="images/RootCollapsed.gif" onclick="Menu_Click(4);" style="cursor: pointer" alt=""/>
-              </div>
-              <div style="float: left;">
-                <img src="images/1.gif" alt=""/>
-              </div>
-              <div class="tab2 menutitle" style="float: left; clear right;">
-                <a shape="rect" class="menu" href="http://vincent.oorsprong.org/normal.asp?pageid=4">Home</a>
-              </div>
-            </li>
-            <li class="menusep">
-              <div style="float: left; clear: both;">
-                <img src="images/1.gif" alt=""/>
-              </div>
-            </li>
-          </ul>
+
+        <div id="header">
+            				
+                <img style="height:190px; width:253px;" src="http://vincent.oorsprong.org/Include/ElectosFileStreaming.asp?FileId=68" id="image" alt="" />
+            
         </div>
-      </div>
-      <div id="column1">
-        <div id="content">
-          <div id="menuimage">
-            <h1>Welcome!</h1>
-          </div>
-          <p>Welcome to the Oorsprong Family website. Here you will find topics concerning the Oorsprong Family.</p>
-          <p>Members of the family have their own domains;</p>
-          <ul>
-            <li>
-              <a shape="rect" target="_blank" href="http://vincent.oorsprong.org">Vincent</a>
-            </li>
-            <li>
-              <a shape="rect" target="_blank" href="http://fang.oorsprong.org">Fang</a>
-            </li>
-          </ul>
-          <p>
-A special domain is present for the             <a shape="rect" target="_blank" href="http://films.oorsprong.org">films</a>
- taken by Ferd Oorsprong (1932-2006).          </p>
-        </div>
-        <div class="clear"> </div>
-      </div>
-      <div id="footer-container">
-        <div id="footer-left"/>
-        <div id="footer-gray"/>
-        <div id="footer"/>
-      </div>
-    </div>
-  </body>
+        
+	    <div id="menubackground">	
+			<div id="mainmenu"> 
+		        <ul>
+		            <!-- Print the menu -->
+		            <li style='display: none;' iLevel='1' Extended='False' id='MenuItem4' ParentNodeId='1' class='MenuNode'><div class='tab2 menuimage' style='padding-top: 9px; float: left; clear: left;'><img src='images/RootCollapsed.gif' ExtendedImage='images/RootExtended.gif' CollapsedImage='images/RootCollapsed.gif' class='MenuNodeIMG' id='MenuImage4' onclick='Menu_Click(4);' style='cursor: pointer' alt='' /></div><div style='float: left;'><img src='images/1.gif' alt='' /></div><div style='float: left; clear right;' class='tab2 menutitle'><a href='http://vincent.oorsprong.org/normal.asp?pageid=4' class='menu'>Home</a></div></li><li class='menusep'><div style='float: left; clear: both;'><img src='images/1.gif' alt='' /></div></li>
+		        </ul>
+		        <!-- Print Current shopping cart content -->
+		        
+		    </div>
+		</div>
+		
+		<div id="column1">		
+	        <div id="content">
+	            <!-- Prints a specific item of a page. The name of the item corresponds with the name of the document structure item you wish to print. In this case the item named 'Title'-->
+	            <div id="menuimage"><h1>Welcome!</h1></div>
+	            
+	            <!-- Prints a specific item of a page. The name of the item corresponds with the name of the document structure item you wish to print. In this case the item named 'Text'-->
+	            <p>Welcome to the Oorsprong Family website. Here you will find topics concerning the Oorsprong Family.</p>
+<p>Members of the family have their own domains;</p>
+<ul>
+    <li><a target="_blank" href="http://vincent.oorsprong.org">Vincent</a></li>
+    <li><a target="_blank" href="http://fang.oorsprong.org">Fang</a></li>
+</ul>
+<p>A special domain is present for the <a target="_blank" href="http://films.oorsprong.org">films</a> taken by Ferd Oorsprong (1932-2006).</p>
+	        </div>
+	
+			<div class="clear">&nbsp;</div>
+		</div>			
+
+		<div id="footer-container"> 
+			<div id="footer-left"> </div>
+			<div id="footer-gray"></div>
+			<div id="footer"> </div>
+		</div>
+	</div>
+</body>
 </html>
-2024-01-21 13:52:38 INFO  GetCapitalByCountryCodeTest:59 End :: Test POST Soap request  using XML
-2024-01-21 13:52:38 INFO  GetCapitalByCountryCodeTest:33 start :: Test POST Soap request  using XML
-2024-01-21 13:52:38 INFO  GetCapitalByCountryCodeTest:34 GET :: URLhttp://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso  for  CA
-2024-01-21 13:52:39 INFO  GetCapitalByCountryCodeTest:58 Response Object ::<html lang="en" lang="en">
-  <head>
-    <script type="text/javascript">
+<!-- Making sure the file is not empty; this might cause a problem on some servers. Replace this text with your own code for augmentation, but make sure it is never empty -->
+
+2024-01-22 10:03:08 INFO  GetCapitalByCountryCodeTest:60 End :: Test POST Soap request  using XML
+2024-01-22 10:03:08 INFO  GetCapitalByCountryCodeTest:34 start :: Test POST Soap request  using XML
+2024-01-22 10:03:08 INFO  GetCapitalByCountryCodeTest:35 GET :: URLhttp://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso  for  CA
+2024-01-22 10:03:10 INFO  GetCapitalByCountryCodeTest:59 Response Object ::
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    
+
+<script type="text/javascript">
     
 
     // Function that should be called to initialize the menu
@@ -236,92 +258,100 @@ A special domain is present for the             <a shape="rect" target="_blank" 
         Menu_Open(aOpenIDs);
     }
 </script>
+    
     <title>Oorsprong Family Domain-Home</title>
-    <meta http-equiv="Content-type" content="application/xhtml+xml; charset=iso-8859-1"/>
-    <meta name="description" content=""/>
-    <meta name="abstract" content=""/>
-    <meta name="copyright" content=""/>
-    <meta name="keywords" content=""/>
-    <meta name="author" content="Data Access Europe B.V."/>
-    <meta name="robots" content="all"/>
-    <link rel="StyleSheet" type="text/Css" href="Css/SearchStyles.css"/>
-    <link rel="StyleSheet" type="text/Css" href="Css/ElectosStyles.css"/>
-    <link rel="StyleSheet" type="text/Css" href="Css/WebsiteStyles.css"/>
-    <script type="text/javascript" src="js/preload.js"/>
-    <script type="text/javascript" src="js/menu.js"/>
-    <script type="text/javascript" src="js/function.js"/>
-  </head>
-  <body onresize="doResize();" onload="setTimeout('Menu_Load();', 100);setTimeout('showEmbLabel();', 100);doResize();">
+    
+	<meta http-equiv="Content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+    <meta name="description" content="" />
+    <meta name="abstract" content="" />
+    <meta name="copyright" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Data Access Europe B.V." />
+	<meta name="robots" content="all" />
+
+    <link rel="StyleSheet" type="text/Css" href="Css/SearchStyles.css" />
+    <link rel="StyleSheet" type="text/Css" href="Css/ElectosStyles.css" />
+    <link rel="StyleSheet" type="text/Css" href="Css/WebsiteStyles.css" />
+    
+    <script type="text/javascript" src="js/preload.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+</head>
+
+<body onresize="doResize();" onload="setTimeout('Menu_Load();', 100);setTimeout('showEmbLabel();', 100);doResize();">
     <div id="container">
-      <div id="top">
-        <div id="logo">
-          <div id="company_logo" style="height:70px; width:42px;">
-            <img style="height:70px; width:42px;" src="http://vincent.oorsprong.org/Include/ElectosFileStreaming.asp?FileId=66" alt="Logo"/>
-          </div>
-          <div id="company_name">Oorsprong Family</div>
-          <div id="company_tagline">Family Website</div>
+        <div id="top">
+            <div id="logo"> 				
+								
+                    <div id="company_logo" style="height:70px; width:42px;">
+                        <img style="height:70px; width:42px;" src="http://vincent.oorsprong.org/Include/ElectosFileStreaming.asp?FileId=66" alt="Logo" />								
+                    </div>
+                
+				
+                <div id="company_name">Oorsprong Family</div>
+                <div id="company_tagline">Family Website</div>					
+			</div>
+
+            
         </div>
-      </div>
-      <div id="header">
-        <img id="image" style="height:190px; width:253px;" src="http://vincent.oorsprong.org/Include/ElectosFileStreaming.asp?FileId=68" alt=""/>
-      </div>
-      <div id="menubackground">
-        <div id="mainmenu">
-          <ul>
-            <li class="MenuNode" id="MenuItem4" style="display: none;" ilevel="1" extended="False" parentnodeid="1">
-              <div class="tab2 menuimage" style="padding-top: 9px; float: left; clear: left;">
-                <img class="MenuNodeIMG" id="MenuImage4" src="images/RootCollapsed.gif" extendedimage="images/RootExtended.gif" collapsedimage="images/RootCollapsed.gif" onclick="Menu_Click(4);" style="cursor: pointer" alt=""/>
-              </div>
-              <div style="float: left;">
-                <img src="images/1.gif" alt=""/>
-              </div>
-              <div class="tab2 menutitle" style="float: left; clear right;">
-                <a shape="rect" class="menu" href="http://vincent.oorsprong.org/normal.asp?pageid=4">Home</a>
-              </div>
-            </li>
-            <li class="menusep">
-              <div style="float: left; clear: both;">
-                <img src="images/1.gif" alt=""/>
-              </div>
-            </li>
-          </ul>
+
+        <div id="header">
+            				
+                <img style="height:190px; width:253px;" src="http://vincent.oorsprong.org/Include/ElectosFileStreaming.asp?FileId=68" id="image" alt="" />
+            
         </div>
-      </div>
-      <div id="column1">
-        <div id="content">
-          <div id="menuimage">
-            <h1>Welcome!</h1>
-          </div>
-          <p>Welcome to the Oorsprong Family website. Here you will find topics concerning the Oorsprong Family.</p>
-          <p>Members of the family have their own domains;</p>
-          <ul>
-            <li>
-              <a shape="rect" target="_blank" href="http://vincent.oorsprong.org">Vincent</a>
-            </li>
-            <li>
-              <a shape="rect" target="_blank" href="http://fang.oorsprong.org">Fang</a>
-            </li>
-          </ul>
-          <p>
-A special domain is present for the             <a shape="rect" target="_blank" href="http://films.oorsprong.org">films</a>
- taken by Ferd Oorsprong (1932-2006).          </p>
-        </div>
-        <div class="clear"> </div>
-      </div>
-      <div id="footer-container">
-        <div id="footer-left"/>
-        <div id="footer-gray"/>
-        <div id="footer"/>
-      </div>
-    </div>
-  </body>
+        
+	    <div id="menubackground">	
+			<div id="mainmenu"> 
+		        <ul>
+		            <!-- Print the menu -->
+		            <li style='display: none;' iLevel='1' Extended='False' id='MenuItem4' ParentNodeId='1' class='MenuNode'><div class='tab2 menuimage' style='padding-top: 9px; float: left; clear: left;'><img src='images/RootCollapsed.gif' ExtendedImage='images/RootExtended.gif' CollapsedImage='images/RootCollapsed.gif' class='MenuNodeIMG' id='MenuImage4' onclick='Menu_Click(4);' style='cursor: pointer' alt='' /></div><div style='float: left;'><img src='images/1.gif' alt='' /></div><div style='float: left; clear right;' class='tab2 menutitle'><a href='http://vincent.oorsprong.org/normal.asp?pageid=4' class='menu'>Home</a></div></li><li class='menusep'><div style='float: left; clear: both;'><img src='images/1.gif' alt='' /></div></li>
+		        </ul>
+		        <!-- Print Current shopping cart content -->
+		        
+		    </div>
+		</div>
+		
+		<div id="column1">		
+	        <div id="content">
+	            <!-- Prints a specific item of a page. The name of the item corresponds with the name of the document structure item you wish to print. In this case the item named 'Title'-->
+	            <div id="menuimage"><h1>Welcome!</h1></div>
+	            
+	            <!-- Prints a specific item of a page. The name of the item corresponds with the name of the document structure item you wish to print. In this case the item named 'Text'-->
+	            <p>Welcome to the Oorsprong Family website. Here you will find topics concerning the Oorsprong Family.</p>
+<p>Members of the family have their own domains;</p>
+<ul>
+    <li><a target="_blank" href="http://vincent.oorsprong.org">Vincent</a></li>
+    <li><a target="_blank" href="http://fang.oorsprong.org">Fang</a></li>
+</ul>
+<p>A special domain is present for the <a target="_blank" href="http://films.oorsprong.org">films</a> taken by Ferd Oorsprong (1932-2006).</p>
+	        </div>
+	
+			<div class="clear">&nbsp;</div>
+		</div>			
+
+		<div id="footer-container"> 
+			<div id="footer-left"> </div>
+			<div id="footer-gray"></div>
+			<div id="footer"> </div>
+		</div>
+	</div>
+</body>
 </html>
-2024-01-21 13:52:39 INFO  GetCapitalByCountryCodeTest:59 End :: Test POST Soap request  using XML
-2024-01-21 13:52:39 INFO  GetCapitalByCountryCodeTest:33 start :: Test POST Soap request  using XML
-2024-01-21 13:52:39 INFO  GetCapitalByCountryCodeTest:34 GET :: URLhttp://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso  for  ML
-2024-01-21 13:52:41 INFO  GetCapitalByCountryCodeTest:58 Response Object ::<html lang="en" lang="en">
-  <head>
-    <script type="text/javascript">
+<!-- Making sure the file is not empty; this might cause a problem on some servers. Replace this text with your own code for augmentation, but make sure it is never empty -->
+
+2024-01-22 10:03:10 INFO  GetCapitalByCountryCodeTest:60 End :: Test POST Soap request  using XML
+2024-01-22 10:03:10 INFO  GetCapitalByCountryCodeTest:34 start :: Test POST Soap request  using XML
+2024-01-22 10:03:10 INFO  GetCapitalByCountryCodeTest:35 GET :: URLhttp://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso  for  ML
+2024-01-22 10:03:11 INFO  GetCapitalByCountryCodeTest:59 Response Object ::
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    
+
+<script type="text/javascript">
     
 
     // Function that should be called to initialize the menu
@@ -330,92 +360,94 @@ A special domain is present for the             <a shape="rect" target="_blank" 
         Menu_Open(aOpenIDs);
     }
 </script>
+    
     <title>Oorsprong Family Domain-Home</title>
-    <meta http-equiv="Content-type" content="application/xhtml+xml; charset=iso-8859-1"/>
-    <meta name="description" content=""/>
-    <meta name="abstract" content=""/>
-    <meta name="copyright" content=""/>
-    <meta name="keywords" content=""/>
-    <meta name="author" content="Data Access Europe B.V."/>
-    <meta name="robots" content="all"/>
-    <link rel="StyleSheet" type="text/Css" href="Css/SearchStyles.css"/>
-    <link rel="StyleSheet" type="text/Css" href="Css/ElectosStyles.css"/>
-    <link rel="StyleSheet" type="text/Css" href="Css/WebsiteStyles.css"/>
-    <script type="text/javascript" src="js/preload.js"/>
-    <script type="text/javascript" src="js/menu.js"/>
-    <script type="text/javascript" src="js/function.js"/>
-  </head>
-  <body onresize="doResize();" onload="setTimeout('Menu_Load();', 100);setTimeout('showEmbLabel();', 100);doResize();">
+    
+	<meta http-equiv="Content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+    <meta name="description" content="" />
+    <meta name="abstract" content="" />
+    <meta name="copyright" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Data Access Europe B.V." />
+	<meta name="robots" content="all" />
+
+    <link rel="StyleSheet" type="text/Css" href="Css/SearchStyles.css" />
+    <link rel="StyleSheet" type="text/Css" href="Css/ElectosStyles.css" />
+    <link rel="StyleSheet" type="text/Css" href="Css/WebsiteStyles.css" />
+    
+    <script type="text/javascript" src="js/preload.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+</head>
+
+<body onresize="doResize();" onload="setTimeout('Menu_Load();', 100);setTimeout('showEmbLabel();', 100);doResize();">
     <div id="container">
-      <div id="top">
-        <div id="logo">
-          <div id="company_logo" style="height:70px; width:42px;">
-            <img style="height:70px; width:42px;" src="http://vincent.oorsprong.org/Include/ElectosFileStreaming.asp?FileId=66" alt="Logo"/>
-          </div>
-          <div id="company_name">Oorsprong Family</div>
-          <div id="company_tagline">Family Website</div>
+        <div id="top">
+            <div id="logo"> 				
+								
+                    <div id="company_logo" style="height:70px; width:42px;">
+                        <img style="height:70px; width:42px;" src="http://vincent.oorsprong.org/Include/ElectosFileStreaming.asp?FileId=66" alt="Logo" />								
+                    </div>
+                
+				
+                <div id="company_name">Oorsprong Family</div>
+                <div id="company_tagline">Family Website</div>					
+			</div>
+
+            
         </div>
-      </div>
-      <div id="header">
-        <img id="image" style="height:190px; width:253px;" src="http://vincent.oorsprong.org/Include/ElectosFileStreaming.asp?FileId=68" alt=""/>
-      </div>
-      <div id="menubackground">
-        <div id="mainmenu">
-          <ul>
-            <li class="MenuNode" id="MenuItem4" style="display: none;" ilevel="1" extended="False" parentnodeid="1">
-              <div class="tab2 menuimage" style="padding-top: 9px; float: left; clear: left;">
-                <img class="MenuNodeIMG" id="MenuImage4" src="images/RootCollapsed.gif" extendedimage="images/RootExtended.gif" collapsedimage="images/RootCollapsed.gif" onclick="Menu_Click(4);" style="cursor: pointer" alt=""/>
-              </div>
-              <div style="float: left;">
-                <img src="images/1.gif" alt=""/>
-              </div>
-              <div class="tab2 menutitle" style="float: left; clear right;">
-                <a shape="rect" class="menu" href="http://vincent.oorsprong.org/normal.asp?pageid=4">Home</a>
-              </div>
-            </li>
-            <li class="menusep">
-              <div style="float: left; clear: both;">
-                <img src="images/1.gif" alt=""/>
-              </div>
-            </li>
-          </ul>
+
+        <div id="header">
+            				
+                <img style="height:190px; width:253px;" src="http://vincent.oorsprong.org/Include/ElectosFileStreaming.asp?FileId=68" id="image" alt="" />
+            
         </div>
-      </div>
-      <div id="column1">
-        <div id="content">
-          <div id="menuimage">
-            <h1>Welcome!</h1>
-          </div>
-          <p>Welcome to the Oorsprong Family website. Here you will find topics concerning the Oorsprong Family.</p>
-          <p>Members of the family have their own domains;</p>
-          <ul>
-            <li>
-              <a shape="rect" target="_blank" href="http://vincent.oorsprong.org">Vincent</a>
-            </li>
-            <li>
-              <a shape="rect" target="_blank" href="http://fang.oorsprong.org">Fang</a>
-            </li>
-          </ul>
-          <p>
-A special domain is present for the             <a shape="rect" target="_blank" href="http://films.oorsprong.org">films</a>
- taken by Ferd Oorsprong (1932-2006).          </p>
-        </div>
-        <div class="clear"> </div>
-      </div>
-      <div id="footer-container">
-        <div id="footer-left"/>
-        <div id="footer-gray"/>
-        <div id="footer"/>
-      </div>
-    </div>
-  </body>
+        
+	    <div id="menubackground">	
+			<div id="mainmenu"> 
+		        <ul>
+		            <!-- Print the menu -->
+		            <li style='display: none;' iLevel='1' Extended='False' id='MenuItem4' ParentNodeId='1' class='MenuNode'><div class='tab2 menuimage' style='padding-top: 9px; float: left; clear: left;'><img src='images/RootCollapsed.gif' ExtendedImage='images/RootExtended.gif' CollapsedImage='images/RootCollapsed.gif' class='MenuNodeIMG' id='MenuImage4' onclick='Menu_Click(4);' style='cursor: pointer' alt='' /></div><div style='float: left;'><img src='images/1.gif' alt='' /></div><div style='float: left; clear right;' class='tab2 menutitle'><a href='http://vincent.oorsprong.org/normal.asp?pageid=4' class='menu'>Home</a></div></li><li class='menusep'><div style='float: left; clear: both;'><img src='images/1.gif' alt='' /></div></li>
+		        </ul>
+		        <!-- Print Current shopping cart content -->
+		        
+		    </div>
+		</div>
+		
+		<div id="column1">		
+	        <div id="content">
+	            <!-- Prints a specific item of a page. The name of the item corresponds with the name of the document structure item you wish to print. In this case the item named 'Title'-->
+	            <div id="menuimage"><h1>Welcome!</h1></div>
+	            
+	            <!-- Prints a specific item of a page. The name of the item corresponds with the name of the document structure item you wish to print. In this case the item named 'Text'-->
+	            <p>Welcome to the Oorsprong Family website. Here you will find topics concerning the Oorsprong Family.</p>
+<p>Members of the family have their own domains;</p>
+<ul>
+    <li><a target="_blank" href="http://vincent.oorsprong.org">Vincent</a></li>
+    <li><a target="_blank" href="http://fang.oorsprong.org">Fang</a></li>
+</ul>
+<p>A special domain is present for the <a target="_blank" href="http://films.oorsprong.org">films</a> taken by Ferd Oorsprong (1932-2006).</p>
+	        </div>
+	
+			<div class="clear">&nbsp;</div>
+		</div>			
+
+		<div id="footer-container"> 
+			<div id="footer-left"> </div>
+			<div id="footer-gray"></div>
+			<div id="footer"> </div>
+		</div>
+	</div>
+</body>
 </html>
-2024-01-21 13:52:41 INFO  GetCapitalByCountryCodeTest:59 End :: Test POST Soap request  using XML
-2024-01-21 13:52:41 INFO  GetCapitalByCountryCodeTest:19 start :: Test POST Number Conversion   using XML
-2024-01-21 13:52:41 INFO  GetCapitalByCountryCodeTest:20 GET :: URLhttps://www.dataaccess.com/webservicesserver/NumberConversion.wso
-2024-01-21 13:52:41 INFO  GetCapitalByCountryCodeTest:23 Amount to convert ::327.87
-2024-01-21 13:52:52 INFO  GetCapitalByCountryCodeTest:45 Amounts coverted in words ::three hundred and twenty seven dollars and eighty seven cents
-2024-01-21 13:52:52 INFO  GetCapitalByCountryCodeTest:50 Response Object ::<?xml version="1.0" encoding="utf-8"?>
+<!-- Making sure the file is not empty; this might cause a problem on some servers. Replace this text with your own code for augmentation, but make sure it is never empty -->
+
+2024-01-22 10:03:11 INFO  GetCapitalByCountryCodeTest:60 End :: Test POST Soap request  using XML
+2024-01-22 10:03:11 INFO  GetCapitalByCountryCodeTest:19 start :: Test POST Number Conversion   using XML
+2024-01-22 10:03:11 INFO  GetCapitalByCountryCodeTest:20 GET :: URLhttps://www.dataaccess.com/webservicesserver/NumberConversion.wso
+2024-01-22 10:03:11 INFO  GetCapitalByCountryCodeTest:23 Amount to convert ::327.87
+2024-01-22 10:03:16 INFO  GetCapitalByCountryCodeTest:45 Amounts coverted in words ::three hundred and twenty seven dollars and eighty seven cents
+2024-01-22 10:03:16 INFO  GetCapitalByCountryCodeTest:50 Response Object ::<?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
     <m:NumberToDollarsResponse xmlns:m="http://www.dataaccess.com/webservicesserver/">
@@ -423,123 +455,29 @@ A special domain is present for the             <a shape="rect" target="_blank" 
     </m:NumberToDollarsResponse>
   </soap:Body>
 </soap:Envelope>
-2024-01-21 13:52:52 INFO  GetCapitalByCountryCodeTest:51 End :: Test POST Number Conversion   using XML
-2024-01-21 13:52:52 INFO  AuthenticationTest:18 Start :: Authentication with rest assured
-2024-01-21 13:52:52 INFO  AuthenticationTest:19 POST :: URL https://reqres.in/api/register
-2024-01-21 13:52:52 INFO  AuthenticationTest:21 Request Object :: User [email=eve.holt@reqres.in, password=pistol]
-2024-01-21 13:52:54 INFO  AuthenticationTest:37 Response Object:: {"id":4,"token":"QpwL5tke4Pnpja7X4"}
-2024-01-21 13:52:54 INFO  AuthenticationTest:38 End :: Authentication with rest assured
-2024-01-21 13:52:54 INFO  OAuthauthenticationTest:47 Start :: Get the current user from token
-2024-01-21 13:52:54 INFO  OAuthauthenticationTest:48 POST :: URLhttps://dummyjson.com/auth/me
-2024-01-21 13:52:55 INFO  OAuthauthenticationTest:61 Request Object :: null
-2024-01-21 13:52:56 INFO  OAuthauthenticationTest:79 Response Object :: {
+2024-01-22 10:03:16 INFO  GetCapitalByCountryCodeTest:51 End :: Test POST Number Conversion   using XML
+2024-01-22 10:03:16 INFO  AuthenticationTest:18 Start :: Authentication with rest assured
+2024-01-22 10:03:16 INFO  AuthenticationTest:19 POST :: URL https://reqres.in/api/register
+2024-01-22 10:03:16 INFO  AuthenticationTest:21 Request Object :: User [email=eve.holt@reqres.in, password=pistol]
+2024-01-22 10:03:18 INFO  AuthenticationTest:37 Response Object:: {"id":4,"token":"QpwL5tke4Pnpja7X4"}
+2024-01-22 10:03:18 INFO  AuthenticationTest:38 End :: Authentication with rest assured
+2024-01-22 10:03:18 INFO  OAuthauthenticationTest:47 Start :: Get the current user from token
+2024-01-22 10:03:18 INFO  OAuthauthenticationTest:48 POST :: URLhttps://dummyjson.com/auth/me
+2024-01-22 10:03:20 INFO  OAuthauthenticationTest:61 Request Object :: null
+2024-01-22 10:03:20 INFO  OAuthauthenticationTest:79 Response Object :: {
     "message": "Authentication Problem"
 }
-2024-01-21 13:52:56 INFO  OAuthauthenticationTest:80 End :: Get the current user from token
-2024-01-21 13:52:56 INFO  OAuthauthenticationTest:21 Start :: Authentication with rest assured
-2024-01-21 13:52:56 INFO  OAuthauthenticationTest:22 POST :: URLhttps://dummyjson.com/auth/login
-2024-01-21 13:52:56 INFO  OAuthauthenticationTest:24 Request Object :: UserInfo [username=kminchelle, password=0lelplR]
-2024-01-21 13:52:57 INFO  OAuthauthenticationTest:39 Response Object :: {
+2024-01-22 10:03:20 INFO  OAuthauthenticationTest:80 End :: Get the current user from token
+2024-01-22 10:03:20 INFO  OAuthauthenticationTest:21 Start :: Authentication with rest assured
+2024-01-22 10:03:20 INFO  OAuthauthenticationTest:22 POST :: URLhttps://dummyjson.com/auth/login
+2024-01-22 10:03:20 INFO  OAuthauthenticationTest:24 Request Object :: UserInfo [username=kminchelle, password=0lelplR]
+2024-01-22 10:03:22 INFO  OAuthauthenticationTest:39 Response Object :: {
     "message": "Authentication Problem"
 }
-2024-01-21 13:52:57 INFO  OAuthauthenticationTest:40 End :: Authentication with rest assured
-2024-01-21 13:52:57 INFO  SSLAuthenticationTest:34 Start :: Test2 SSL Certificates for HTTPs
-2024-01-21 13:52:57 INFO  SSLAuthenticationTest:35 POST :: URL http://www.bupa.com.au/
-2024-01-21 13:52:58 INFO  SSLAuthenticationTest:50 End :: Test2 SSL Certificates for HTTPs
-2024-01-21 13:52:58 INFO  SSLAuthenticationTest:17 Start :: Test SSL Certificates for HTTPs
-2024-01-21 13:52:58 INFO  SSLAuthenticationTest:18 POST :: URL https://dummyjson.com/auth/login
-2024-01-21 13:52:59 INFO  SSLAuthenticationTest:30 End :: Test SSL Certificates for HTTPs
-2024-01-21 14:12:58 INFO  ListofCountriesWithCountryCodeTest:19 start :: Test List of Countries with country code Soap request  using XML
-2024-01-21 14:12:58 INFO  ListofCountriesWithCountryCodeTest:20 GET :: URLhttp://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso
-2024-01-21 14:13:02 INFO  ListofCountriesWithCountryCodeTest:43 Response Object ::<html lang="en" lang="en">
-  <head>
-    <script type="text/javascript">
-    
-
-    // Function that should be called to initialize the menu
-    function Menu_Load(){
-        var aOpenIDs = new Array(1);
-        Menu_Open(aOpenIDs);
-    }
-</script>
-    <title>Oorsprong Family Domain-Home</title>
-    <meta http-equiv="Content-type" content="application/xhtml+xml; charset=iso-8859-1"/>
-    <meta name="description" content=""/>
-    <meta name="abstract" content=""/>
-    <meta name="copyright" content=""/>
-    <meta name="keywords" content=""/>
-    <meta name="author" content="Data Access Europe B.V."/>
-    <meta name="robots" content="all"/>
-    <link rel="StyleSheet" type="text/Css" href="Css/SearchStyles.css"/>
-    <link rel="StyleSheet" type="text/Css" href="Css/ElectosStyles.css"/>
-    <link rel="StyleSheet" type="text/Css" href="Css/WebsiteStyles.css"/>
-    <script type="text/javascript" src="js/preload.js"/>
-    <script type="text/javascript" src="js/menu.js"/>
-    <script type="text/javascript" src="js/function.js"/>
-  </head>
-  <body onresize="doResize();" onload="setTimeout('Menu_Load();', 100);setTimeout('showEmbLabel();', 100);doResize();">
-    <div id="container">
-      <div id="top">
-        <div id="logo">
-          <div id="company_logo" style="height:70px; width:42px;">
-            <img style="height:70px; width:42px;" src="http://vincent.oorsprong.org/Include/ElectosFileStreaming.asp?FileId=66" alt="Logo"/>
-          </div>
-          <div id="company_name">Oorsprong Family</div>
-          <div id="company_tagline">Family Website</div>
-        </div>
-      </div>
-      <div id="header">
-        <img id="image" style="height:190px; width:253px;" src="http://vincent.oorsprong.org/Include/ElectosFileStreaming.asp?FileId=68" alt=""/>
-      </div>
-      <div id="menubackground">
-        <div id="mainmenu">
-          <ul>
-            <li class="MenuNode" id="MenuItem4" style="display: none;" ilevel="1" extended="False" parentnodeid="1">
-              <div class="tab2 menuimage" style="padding-top: 9px; float: left; clear: left;">
-                <img class="MenuNodeIMG" id="MenuImage4" src="images/RootCollapsed.gif" extendedimage="images/RootExtended.gif" collapsedimage="images/RootCollapsed.gif" onclick="Menu_Click(4);" style="cursor: pointer" alt=""/>
-              </div>
-              <div style="float: left;">
-                <img src="images/1.gif" alt=""/>
-              </div>
-              <div class="tab2 menutitle" style="float: left; clear right;">
-                <a shape="rect" class="menu" href="http://vincent.oorsprong.org/normal.asp?pageid=4">Home</a>
-              </div>
-            </li>
-            <li class="menusep">
-              <div style="float: left; clear: both;">
-                <img src="images/1.gif" alt=""/>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div id="column1">
-        <div id="content">
-          <div id="menuimage">
-            <h1>Welcome!</h1>
-          </div>
-          <p>Welcome to the Oorsprong Family website. Here you will find topics concerning the Oorsprong Family.</p>
-          <p>Members of the family have their own domains;</p>
-          <ul>
-            <li>
-              <a shape="rect" target="_blank" href="http://vincent.oorsprong.org">Vincent</a>
-            </li>
-            <li>
-              <a shape="rect" target="_blank" href="http://fang.oorsprong.org">Fang</a>
-            </li>
-          </ul>
-          <p>
-A special domain is present for the             <a shape="rect" target="_blank" href="http://films.oorsprong.org">films</a>
- taken by Ferd Oorsprong (1932-2006).          </p>
-        </div>
-        <div class="clear"> </div>
-      </div>
-      <div id="footer-container">
-        <div id="footer-left"/>
-        <div id="footer-gray"/>
-        <div id="footer"/>
-      </div>
-    </div>
-  </body>
-</html>
-2024-01-21 14:13:02 INFO  ListofCountriesWithCountryCodeTest:44 End :: Test List of Countries with country code Soap request  using XML
+2024-01-22 10:03:22 INFO  OAuthauthenticationTest:40 End :: Authentication with rest assured
+2024-01-22 10:03:22 INFO  SSLAuthenticationTest:34 Start :: Test2 SSL Certificates for HTTPs
+2024-01-22 10:03:22 INFO  SSLAuthenticationTest:35 POST :: URL http://www.bupa.com.au/
+2024-01-22 10:03:24 INFO  SSLAuthenticationTest:50 End :: Test2 SSL Certificates for HTTPs
+2024-01-22 10:03:24 INFO  SSLAuthenticationTest:17 Start :: Test SSL Certificates for HTTPs
+2024-01-22 10:03:24 INFO  SSLAuthenticationTest:18 POST :: URL https://dummyjson.com/auth/login
+2024-01-22 10:03:25 INFO  SSLAuthenticationTest:30 End :: Test SSL Certificates for HTTPs
